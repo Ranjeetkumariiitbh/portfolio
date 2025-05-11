@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f226e582d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+       <div class="container">
+            <nav>
+                <img scr="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi,I'm <span>Ranjeet Kumar</span><br> From India</h1>
+            </div>
+       </div>
+</div>
+<!---------about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+           <div class="about-col-1">
+          <img src="Ranjeet photo.jpg">
+        </div>
+       <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+            I am Ranjeet Kumar, a third-year B.Tech student in Mechatronics and Automation Engineering 
+            at IIIT Bhagalpur. With a strong foundation in data structures, algorithms, and system design, 
+            I am passionate about solving real-world problems at the intersection of software and hardware.
+            My academic background is complemented by hands-on experience in version control (Git)
+            I have developed full-stack web applications using the MERN stack,
+            including "Chatting Out"—a real-time messaging platform with JWT authentication and WebSocket integration. </p>
+            <div class="tab-titles"> 
+                <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                <p class="tab-links "onclick="opentab('education')""> Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web Development</span><br>Web Development</li>
+                    <li><span>App Development</span><br>Building Android/ioS apps</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-2026</span><br>B.Tech from IIIT,Bhagalpur</li>
+                    <li><span>2020</span><br>12th From S N SINHA COLLEGE,Aurangabad</li>
+                    <li><span>2018</span><br>10th Fom K HIGH SCHOOL,Sonenagar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-------------services-------->
+<div id="services">
+     <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> I specialize in creating responsive, user-friendly, and visually appealing web designs 
+                    that enhance user experience. With a focus on modern UI/UX principles, I design clean interfaces 
+                    that align with project goals, ensuring both functionality and aesthetic quality across devices. 
+                    My designs blend creativity with usability for impactful digital experiences.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I design intuitive and engaging user interfaces with a strong focus on user experience. My approach 
+                    combines user research, wireframing, prototyping, and usability testing to create digital products 
+                    that are not only visually appealing but also easy to navigate. I strive to deliver designs that solve 
+                    real problems and enhance user satisfaction. </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>I craft user-centric mobile and web app designs that balance functionality and aesthetics. From wireframes
+                   to high-fidelity prototypes, my focus is on creating intuitive, responsive, and visually cohesive
+                   interfaces that enhance user engagement and deliver seamless digital experiences across platforms. </p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+     </div>
+</div>
+
+
+<!-----------portfolio-------->
+<div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Learn Full Stack Development</h3>
+                    <p>The image highlights three web development types: Front-end (user interface), 
+                    Back-end (server and database), and Full Stack (both). These roles together ensure complete, 
+                    functional, and user-friendly web applications.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-1.webp">
+                <div class="layer">
+                    <h3>Road Map Of Data Structures</h3>
+                    <p>This chart maps key data structures and algorithms like arrays, 
+                        trees, graphs, dynamic programming, and recursion for problem-solving mastery.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Data Structure And Algorithms</h3>
+                    <p>This diagram categorizes essential data structures and algorithms, 
+                        highlighting key concepts like trees, graphs, recursion, dynamic programming, and searching.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+</div>
+<!-------------contact-------->
+<div id="contact">
+    <div class="container"></div>
+     <div class="row">
+         <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>rks977152@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8092358184</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Ranjeet_CV.pdf" download class="btn btn2">Download CV</a>
+         </div>
+        <div class="contact-right"> 
+            <form name="submit-to-google-sheet">
+               <input type="text" name="Name" placeholder="Your Name" required>
+               <input type="email" name="Email" placeholder="Your Email" required>
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+      </div>
+   </div>
+   <div class="copyright">
+    <p>Copyright @Ranjeet made with<i class="fa-solid fa-heart">Easy Tutorial</i></p>
+   </div>
+</div>
+
+
+
+<script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    
+    var sidemeu = document.getElementById("sidemenu");
+     
+     function openmenu(){
+        sidemeu.style.right = "0";
+     }
+     function closemenu(){
+        sidemeu.style.right = "-200px";
+     }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxovzns0uhqWakXO-RsCAFv5bh30itMGRUoJiRRdKfE7lGcYN4X76evdRc9RL8WrDo1QA/exec'
+    const form = document.forms['submit-to-google-sheet']
+       const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
